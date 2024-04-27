@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    }
+
+.destination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.destination-item {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.destination-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.destination-item p {
+    margin-top: 10px;
+}
+
+.destination-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.destination-item a:hover {
+    color: #007bff;
+}

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="faq.css">
+    </head>
+    <body>
+    <header>
+        <h1>Help Center</h1>
+    </header>
+        <div ng-app="myApp" ng-controller="namesCtrl">
+            <main>
+            <section>
+                <h2>Frequently Asked Questions:</h2>
+                <p><input type="text" ng-model="test" placeholder="Search FAQs"></p>
+                <ul>
+                <li ng-repeat="x in names | filter:test">
+                    {{ x }}
+                </li>
+                </ul>
+            </section>
+            </main>
+        </div>
+        <hr>
+        <footer>
+            <h2>For more help contact Us on:</h2>
+            <a href="contact.html">Contact Us</a>
+        </footer>
+
+        <script>
+            angular.module('myApp', []).controller('namesCtrl', function($scope) {
+            $scope.names = [
+                "Required travel documents: Check with your government or embassy for passport and visa requirements.",
+                "Best time to visit: Research peak seasons for weather and tourism.",
+                "Packing: Pack essentials like clothes, toiletries, and any specific items for your destination's activities.",
+                "Travel insurance: Recommended for medical emergencies, trip cancellations, or lost luggage.",
+                "Must-visit attractions: Explore our destination guides or ask locals for recommendations.",
+                "Safety: Check travel advisories and take precautions like avoiding risky areas.",
+                "Public transportation: Research routes and schedules or use transportation apps.",
+                "Budget tips: Eat local, use public transport, and look for free activities."
+            ];
+            });
+        </script>
+    </body>
+</html>

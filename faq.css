@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("helpbg.png");
+    }
+
+    header {
+    background-color: darkslategrey;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    }
+
+    main {
+    padding: 20px;
+    }
+
+    section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    }
+
+
+    ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    }
+
+    a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold; 
+    }
+
+    input.text-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    footer{
+        background-color: darkslategray;
+    }
